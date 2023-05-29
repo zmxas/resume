@@ -1,0 +1,4 @@
+flask==2.0.1
+python-dotenv==0.19.1
+pdfcrowd==5.2.0
+flask_wtf==1.0.0
