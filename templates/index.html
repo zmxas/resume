@@ -79,18 +79,13 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="content-item">
-                                                <small>2017 - Present</small>
-                                                <h3>Senior IT Specialist</h3>
-                                                <h4>UAB "Interneto vizija"</h4>
-
-                                                <p>Vilnius</p>
-                                            </div>
-                                            <div class="content-item">
-                                                <small>2015 Nov - 2016 Apr</small>
-                                                <h3>Sales Consultant</h3>
-                                                <h4>Elektromarkt Lietuva</h4>
-
-                                                <p>Vilnius</p>
+                                                {% if pareigos and imone and trukme %}
+                                                <h3>{{ pareigos }}</h3>
+                                                <h4>UAB {{ imone }}</h4>
+                                                <small>{{ trukme }}</small>
+                                                {% else %}
+                                                <h3>Blokavimas iš cvbankas.lt</h3>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
